@@ -1,0 +1,2 @@
+# praticeJs
+ Exercices in JS
