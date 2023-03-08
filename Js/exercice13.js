@@ -19,19 +19,19 @@ function adder() {
 }
 
 function subtracter() {
-    let newValor = Number(prompt('Digite um valor a ser somado'))
+    let newValor = Number(prompt('Digite um valor a ser subtraído'))
   number -= newValor
   writer()
 }
 
 function multiplyer() {
-    let newValor = Number(prompt('Digite um valor a ser somado'))
+    let newValor = Number(prompt('Digite um valor a ser multiplicado'))
   number *= newValor
   writer()
 }
 
 function divider() {
-    let newValor = Number(prompt('Digite um valor a ser somado'))
+    let newValor = Number(prompt('Digite um valor a ser dividido'))
   number /= newValor
   writer()
 }
