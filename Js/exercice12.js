@@ -8,7 +8,7 @@ function calculator() {
     if(number.value == "") {
         result.textContent = "Digite um valor numérico para criar uma tabuada"
     } else {
-        result.innerHTML = `Resultado: <br>`
+        cleaner()
         for(i=1;i<=10;i++) {
             multiple = number.value * i
             result.innerHTML += `${number.value} x ${i} = ${multiple} <br>` 
@@ -18,7 +18,6 @@ function calculator() {
 
 function cleaner() {
     result.innerHTML = `Resultado: <br>`
-    number.value = ''
 }
 
 verify.addEventListener('click', calculator)
