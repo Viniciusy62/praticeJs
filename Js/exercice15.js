@@ -13,25 +13,21 @@ function writer() {
 }
 
 function calculator(sinal) {
-    let newValor = 0
+    let newValor = Number(prompt('Digite um número'))
     switch(sinal) {
         case '+':
-            newValor = Number(prompt('Digite um valor a ser somado'))
             number += newValor
             result.textContent = number
             break
         case '-':
-            newValor = Number(prompt('Digite um valor a ser somado'))
             number -= newValor
             result.textContent = number
             break
         case '*':
-            newValor = Number(prompt('Digite um valor a ser somado'))
             number *= newValor
             result.textContent = number
             break
         case '/':
-            newValor = Number(prompt('Digite um valor a ser somado'))
             number /= newValor
             result.textContent = number
             break
