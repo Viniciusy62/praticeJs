@@ -16,17 +16,29 @@ function calculator(sinal) {
     let newValor = 0
     switch(sinal) {
         case '+':
-             newValor = Number(prompt('Digite um valor a ser somado'))
-            newValor += number
-            result.textContent = newValor
+            newValor = Number(prompt('Digite um valor a ser somado'))
+            number += newValor
+            result.textContent = number
             break
         case '-':
-             newValor = Number(prompt('Digite um valor a ser somado'))
-            newValor -= number
-            result.textContent = newValor
+            newValor = Number(prompt('Digite um valor a ser somado'))
+            number -= newValor
+            result.textContent = number
             break
+        case '*':
+            newValor = Number(prompt('Digite um valor a ser somado'))
+            number *= newValor
+            result.textContent = number
+            break
+        case '/':
+            newValor = Number(prompt('Digite um valor a ser somado'))
+            number /= newValor
+            result.textContent = number
+            break
+        default:
+            result.textContent = "Tente novamente"
     }
-} //Incompleto/incorreto
+}
 
 function cleaner() {
     result.innerHTML = `Resultado: <br>`
@@ -35,6 +47,6 @@ function cleaner() {
 
 add.addEventListener('click', function() {calculator('+')})
 subtract.addEventListener('click', function() {calculator('-')})
-multiply.addEventListener('click', multiplyer)
-divide.addEventListener('click', divider)
+multiply.addEventListener('click', function() {calculator('*')})
+divide.addEventListener('click', function() {calculator('/')})
 clean.addEventListener('click', cleaner)
